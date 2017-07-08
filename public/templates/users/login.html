@@ -1,0 +1,27 @@
+
+<body id="login">
+<div class="login-logo">
+    <a  href="javascript:void(0)"><img src="images/logo.png" alt=""/></a>
+</div>
+<h2 class="form-heading">login</h2>
+<div class="app-cam">
+    <form name="loginForm" ng-submit="doLogin(loginForm)">
+        <input type="text" class="text" value="E-mail address" ng-model="login.username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}">
+        <input type="password" value="Password" ng-model="login.password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+        <div class="submit"><input type="submit"   value="Login"></div>
+        <div class="login-social-link" style="display: flex">
+            <a  href="javascript:void(0)" class="facebook">
+                Facebook
+            </a>
+            <a  href="javascript:void(0)" class="twitter">
+                Twitter
+            </a>
+        </div>
+        <ul class="new">
+            <li class="new_left"><p><a href="javascript:void(0)">Forgot Password ?</a></p></li>
+            <li class="new_right"><p class="sign">New here ?<a href="javascript:void(0)"> Sign Up</a></p></li>
+            <div class="clearfix"></div>
+        </ul>
+    </form>
+</div>
+</body>
